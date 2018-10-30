@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 30, 2018 2:56:03 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="rsku" name="pojos.Pasien" optimistic-lock="version" table="pasien">
+    <id name="noRm" type="string">
+      <column length="20" name="noRm"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="nama" type="string">
+      <column length="25" name="nama"/>
+    </property>
+    <property name="alamat" type="string">
+      <column length="65535" name="alamat"/>
+    </property>
+    <property name="nik" type="string">
+      <column length="25" name="nik"/>
+    </property>
+    <property name="tanggalLahir" type="date">
+      <column length="10" name="tanggalLahir"/>
+    </property>
+    <property name="kelamin" type="string">
+      <column length="10" name="kelamin"/>
+    </property>
+  </class>
+</hibernate-mapping>

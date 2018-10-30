@@ -46,5 +46,11 @@ Contributor(s):
     <property name="hibernate.connection.url">jdbc:mysql://206.189.38.188:3306/rsku?zeroDateTimeBehavior=convertToNull</property>
     <property name="hibernate.connection.username">rsku</property>
     <property name="hibernate.connection.password">rsku</property>
+    <mapping resource="pojos/Dokter.hbm.xml"/>
+    <mapping resource="pojos/Pasien.hbm.xml"/>
+    <mapping resource="pojos/Klinik.hbm.xml"/>
+    <mapping resource="pojos/Location.hbm.xml"/>
+    <mapping resource="pojos/Antrian.hbm.xml"/>
+    <mapping resource="pojos/User.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>
